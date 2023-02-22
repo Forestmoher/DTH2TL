@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LargeRoom
+  - Camera Ignore
+  - UI Camera
+  - Player Interaction
+  - CinemachineTarget
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ignore Lighting
+  - Water
+  - UI
+  - Camera Ignore
+  - Interactable
+  - DiningRoom
+  - Player
+  - Hallway
+  - Kitchen
+  - Closet
+  - BathroomOne
+  - BathroomTwo
+  - Doors
+  - Stairwell
+  - OfficeOne
+  - OfficeTwo
+  - OfficeThree
+  - Lab
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: DiningRoom
+    uniqueID: 2528946159
+    locked: 0
+  - name: UI
+    uniqueID: 3061545763
+    locked: 0
