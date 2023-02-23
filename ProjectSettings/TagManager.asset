@@ -20,20 +20,20 @@ TagManager:
   - Interactable
   - DiningRoom
   - Player
-  - Hallway
+  - HallwayOne
   - Kitchen
   - Closet
   - BathroomOne
   - BathroomTwo
   - Doors
-  - Stairwell
+  - StairsOne
   - OfficeOne
   - OfficeTwo
   - OfficeThree
   - Lab
-  - 
-  - 
-  - 
+  - HallwayTwo
+  - StairHallway
+  - StairsTwo
   - 
   - 
   - 
