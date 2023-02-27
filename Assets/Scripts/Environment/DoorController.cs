@@ -3,9 +3,10 @@ using UnityEngine.InputSystem;
 
 public class DoorController : MonoBehaviour
 {
-    [SerializeField] private bool _isOpening;
-    [SerializeField] private bool _inReach;
-    [SerializeField] private bool _atDoorFront; //used to tell which side of door player is on
+    [SerializeField] private bool _isLocked;
+    private bool _isOpening;
+    private bool _inReach;
+    private bool _atDoorFront; //used to tell which side of door player is on
     private float _openSpeed = 0.01f;
     private float _closeSpeed = 0.01f;
     private float _doorState;
@@ -50,13 +51,15 @@ public class DoorController : MonoBehaviour
 
     private void UpdateDoorState()
     {
+        if(_isLocked) { return; }
+
         //if the player is within range and clicks 'E'
         if(_inReach && Keyboard.current.eKey.wasPressedThisFrame)
         {
             _isOpening = true;
         }
 
-        //set door state float for animator, depending on which side they are on
+        //set door state float for animator, depending on which side the player is on
         if(_isOpening && _atDoorFront)
         {
             _doorState -= _openSpeed;
@@ -75,7 +78,6 @@ public class DoorController : MonoBehaviour
             _isOpening = false;
         }
     }
-
 
     private void OpenDoor(float state)
     {

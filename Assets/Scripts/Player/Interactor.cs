@@ -24,14 +24,13 @@ public class Interactor : MonoBehaviour
 
     private void Update()
     {
-        var colliders = Physics.OverlapSphere(_interactionPoint.position, _interactionRadius, _interactionLayer);
+        Collider[] colliders = Physics.OverlapSphere(_interactionPoint.position, _interactionRadius, _interactionLayer);
 
         if (_interactAction.triggered)
         {
             for (int i = 0; i < colliders.Length; i++)
             {
-                var interactable = colliders[i].GetComponent<IInteractable>();
-                if (interactable != null) StartInteraction(interactable);
+                if (colliders[i].TryGetComponent<IInteractable>(out var interactable)) StartInteraction(interactable);
             }
         }
     }

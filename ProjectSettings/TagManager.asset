@@ -9,6 +9,7 @@ TagManager:
   - UI Camera
   - Player Interaction
   - CinemachineTarget
+  - Dialogue Panel
   layers:
   - Default
   - TransparentFX

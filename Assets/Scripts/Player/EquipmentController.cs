@@ -9,7 +9,7 @@ using UnityEngine.UI;
 /// <summary>
 /// Handles item currently in hotbar 
 /// Triggers Equipment script 
-/// Triggers item animation
+/// Triggers item equip animation
 /// </summary>
 public class EquipmentController : MonoBehaviour
 {

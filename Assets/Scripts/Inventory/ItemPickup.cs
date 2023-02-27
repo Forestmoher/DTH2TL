@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
+
+/// <summary>
+/// Not currently used - Use interaction trigger instead
+/// </summary>
 [RequireComponent(typeof(SphereCollider))]
 public class ItemPickup : MonoBehaviour, IInteractable
 {
@@ -26,7 +30,7 @@ public class ItemPickup : MonoBehaviour, IInteractable
         {
             Destroy(gameObject);
             interactionSuccessful = true;
-        }
+        } 
     }
 
     private void Awake()

@@ -12,8 +12,8 @@ public class InventoryItemData : ScriptableObject
     public int maxStackSize;
     public GameObject itemPrefab;
 
-    public void UseItem(EquipmentController equipmentController)
-    {
-        Debug.Log($"Using {itemName}");
-    }
+    //public void UseItem(EquipmentController equipmentController)
+    //{
+    //    Debug.Log($"Using {itemName}");
+    //}
 }
